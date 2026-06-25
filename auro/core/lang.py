@@ -30,7 +30,7 @@ class Language:
 
     def __init__(self):
         self.lang_codes = lang_codes
-        self.lang_dir = Path("KartikMusic/locales")
+        self.lang_dir = Path("auro/locales")
         self.languages = self.load_files()
 
     def load_files(self):

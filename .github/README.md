@@ -46,50 +46,82 @@
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
 </h3>
-
-- Get your [Necessary Variables](https://github.com/saregamamusic/SaregamaMusic/blob/master/sample.env)
   ---
 
-## Quick Setup
+### 🔧 Quick Setup
 
-1. Upgrade and update packages:
+<h3>✔️ Prerequisites</h3>
+
+- <a href="https://www.python.org">Python 3.10+</a> installed  
+- <a href="https://deno.com/">deno</a> & <a href="https://ffmpeg.org//">ffmpeg</a> installed on your system  
+- Required variables mentioned in <a href="https://github.com/rockyxd3/Auro/blob/master/sample.env">sample.env</a>
+
+1. **Upgrade & Update:**
    ```bash
    sudo apt-get update && sudo apt-get upgrade -y
    ```
-2. Install required packages:
+
+2. **Install Required Packages:**
    ```bash
    sudo apt-get install python3-pip ffmpeg -y
    ```
-3. Upgrade `pip`:
+
+3. **Install Deno:**
+   ```bash
+   apt-get install unzip && curl -fsSL https://deno.land/install.sh | sh
+   ```
+
+3. **Setting up PIP**
    ```bash
    sudo pip3 install -U pip
    ```
-4. Install Node.js:
+4. **Clone the Repository**
    ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.bashrc && nvm install v18
+   git clone https://github.com/rockyxd3/Auro && cd Auro
    ```
-5. Clone the repository:
-   ```bash
-   git clone https://github.com/SkyBotsDeveloper/Meco-Music && cd Meco-Music
-   ```
-6. Install requirements:
+5. **Install Requirements**
    ```bash
    pip3 install -U -r requirements.txt
    ```
-7. Edit environment variables:
+6. **Create .env  with sample.env**
    ```bash
-   nano .env
+   cp sample.env .env
    ```
-8. Optional: run inside `tmux`:
+   - Edit .env with your vars
+7. **Editing Vars:**
    ```bash
-   sudo apt install tmux -y && tmux
+   vi .env
    ```
-9. Start the bot:
-   ```bash
-   bash start
-   ```
+   - Edit .env with your values.
+   - Press `I` button on keyboard to start editing.
+   - Press `Ctrl + C`  once you are done with editing vars and type `:wq` to save .env or `:qa` to exit editing.
+8. **Installing tmux**
+    ```bash
+    sudo apt install tmux -y && tmux
+    ```
+9. **Run the Bot**
+    ```bash
+    bash start
+    ```
+
+---
+
+### 🛠 Commands & Usage
+
+The Aviax Music Bot offers a range of commands to enhance your music listening experience on Telegram:
+
+| Command                 | Description                                 |
+|-------------------------|---------------------------------------------|
+| `/play <song name>`     | Play the requested song.                    |
+| `/pause`                | Pause the currently playing song.           |
+| `/resume`               | Resume the paused song.                     |
+| `/skip`                 | Move to the next song in the queue.         |
+| `/stop`                 | Stop the bot and clear the queue.           |
+| `/queue`                | Display the list of songs in the queue.     |
+
+For a full list of commands, use `/help` in [telegram](https://t.me/TEAMAURO).
 
 ---
 ━━━━━━━━━━━━━━━━━━━━
 ### Contact :
-<a href="https://telegram.me/MrRockyTg"><img title="Telegram" src="https://img.shields.io/badge/Telegram-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
+<a href="https://telegram.me/MrRockyTg"><img title="Telegram" src="https://img.shields.io/badge/Contact-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>

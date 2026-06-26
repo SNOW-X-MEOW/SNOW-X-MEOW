@@ -3,7 +3,7 @@ from time import time
 
 from pymongo import AsyncMongoClient
 
-from auro import config, logger, userbot
+from auro import config, logger, auro
 
 
 class MongoDB:

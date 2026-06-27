@@ -54,7 +54,7 @@ class Config:
         )
         self.START_IMG = getenv(
             "START_IMG",
-            "https://graph.org/file/7eb3861ad7d0e534779f9-d8bd7d44babfa6961b.jpg",
+            "https://graph.org/file/c2db552b06192a69faafc-76b33fd233f4e37c40.jpg",
         )
 
     def check(self):

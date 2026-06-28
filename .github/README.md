@@ -122,11 +122,8 @@
 
 <br/>
 
-<td>Project Owner</td>
-<td align="center"><img src="https://img.shields.io/badge/🏢-Owner-f59e0b?style=flat-square"/></td>
-</tr>
-</table>
-
+### Contact :
+<a href="https://telegram.me/MrRockyTg"><img title="Telegram" src="https://img.shields.io/badge/Contact-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
 
 ## 〔 ⚠️ Disclaimer 〕
 

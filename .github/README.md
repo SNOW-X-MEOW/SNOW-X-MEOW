@@ -141,14 +141,6 @@ The Aviax Music Bot offers a range of commands to enhance your music listening e
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=140&section=footer&animation=fadeIn&fontColor=ffffff&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20TEAM-AURO&fontSize=22&fontAlignY=65" width="100%"/>
 
-<br/>
-
-[![🌐 xbitcode.com](https://img.shields.io/badge/━━━━━━━━━━%20🌐%20TEAM-AURO.COM%20━━━━━━━━━━-A855F7?style=for-the-badge)](https://t.me/TeamAuro)
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=xbitcode-music&label=Profile+Views&color=A855F7&style=for-the-badge" alt="Views"/>
-
 <br/><br/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>

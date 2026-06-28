@@ -105,7 +105,7 @@
 ╔════════════════════════════════════════════════════════════════════╗
 ║                      🚀 Commands & Usage  🚀                      ║
 ║────────────────────────────────────────────────────────────────────║
- ║ Command                 | Description                              ║  
+  ║ Command                 | Description                              ║  
 ║-------------------------|------------------------------------------║
 ║ `/play <song name>`     | Play the requested song.                 ║
 ║ `/pause`                | Pause the currently playing song.        ║

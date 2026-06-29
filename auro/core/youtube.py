@@ -5,7 +5,6 @@ import re
 from pathlib import Path
 
 import aiohttp
-import yt_dlp
 from py_yt import Playlist, VideosSearch
 
 from auro import app, config, logger
@@ -133,7 +132,9 @@ class YouTube:
                 retries = 10
 
                 if not data or not data.get("download_url"):
-                    logger.warning("[AUDIO] File not ready / JSON missing → retrying...")
+                    logger.warning(
+                        "[AUDIO] File not ready / JSON missing → retrying..."
+                    )
 
                     for i in range(retries):
                         await asyncio.sleep(8)
@@ -149,11 +150,17 @@ class YouTube:
                             logger.error(f"[AUDIO] API ERROR during retry → {data}")
                             return None
 
-                        if data and data.get("status") == "success" and data.get("download_url"):
-                            logger.info(f"[AUDIO] Got URL after retry #{i+1}")
+                        if (
+                            data
+                            and data.get("status") == "success"
+                            and data.get("download_url")
+                        ):
+                            logger.info(f"[AUDIO] Got URL after retry #{i + 1}")
                             break
 
-                        logger.warning(f"[AUDIO] Retry {i+1}/{retries} → still not ready")
+                        logger.warning(
+                            f"[AUDIO] Retry {i + 1}/{retries} → still not ready"
+                        )
 
                 if not data or not data.get("download_url"):
                     logger.error(f"[AUDIO] FAILED after all retries → {data}")
@@ -163,7 +170,9 @@ class YouTube:
 
                 async with session.get(download_link) as file_response:
                     if file_response.status != 200:
-                        logger.error(f"[AUDIO] Download failed → {file_response.status}")
+                        logger.error(
+                            f"[AUDIO] Download failed → {file_response.status}"
+                        )
                         return None
 
                     with open(path, "wb") as f:
@@ -209,7 +218,9 @@ class YouTube:
                 retries = 20
 
                 if not data or not data.get("download_url"):
-                    logger.warning("[VIDEO] File not ready / JSON missing → retrying...")
+                    logger.warning(
+                        "[VIDEO] File not ready / JSON missing → retrying..."
+                    )
 
                     for i in range(retries):
                         await asyncio.sleep(20)
@@ -225,11 +236,17 @@ class YouTube:
                             logger.error(f"[VIDEO] API ERROR during retry → {data}")
                             return None
 
-                        if data and data.get("status") == "success" and data.get("download_url"):
-                            logger.info(f"[VIDEO] Got URL after retry #{i+1}")
+                        if (
+                            data
+                            and data.get("status") == "success"
+                            and data.get("download_url")
+                        ):
+                            logger.info(f"[VIDEO] Got URL after retry #{i + 1}")
                             break
 
-                        logger.warning(f"[VIDEO] Retry {i+1}/{retries} → still not ready")
+                        logger.warning(
+                            f"[VIDEO] Retry {i + 1}/{retries} → still not ready"
+                        )
 
                 if not data or not data.get("download_url"):
                     logger.error(f"[VIDEO] FAILED after all retries → {data}")
@@ -239,7 +256,9 @@ class YouTube:
 
                 async with session.get(download_link) as file_response:
                     if file_response.status != 200:
-                        logger.error(f"[VIDEO] Download failed → {file_response.status}")
+                        logger.error(
+                            f"[VIDEO] Download failed → {file_response.status}"
+                        )
                         return None
 
                     with open(path, "wb") as f:

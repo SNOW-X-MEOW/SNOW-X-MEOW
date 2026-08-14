@@ -27,8 +27,8 @@ class Config:
         self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SNOW_X_MUSIC")
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/bakafamly")
 
-        self.API_URL = "http://artistbotspinger.onrender.com"
-        self.API_KEY = "Artistbotsnb8jTlUb6SeoqiJgv0lKLL"
+        self.API_URL = "https://pvtz.nexgenbots.xyz"
+        self.API_KEY = "30DxNexGenBots2f7ada"
 
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "False"
         self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "False"

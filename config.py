@@ -24,11 +24,11 @@ class Config:
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
-        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ajao_sabhi")
-        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/")
+        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SNOW_X_MUSIC")
+        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/bakafamly")
 
-        self.API_URL = "https://teaminflex.xyz"
-        self.API_KEY = "INFLEX92317428D"
+        self.API_URL = "http://api.nubcoders.com/"
+        self.API_KEY = "EEq3g1Lpm7"
 
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "False"
         self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "False"

@@ -44,7 +44,7 @@ class Userbot(Client):
         client = clients[num]
         await client.start()
         try:
-            await client.send_message(config.LOGGER_ID, "SNOW ASSISTANT ALIVE 🩷")
+            await client.send_message(config.LOGGER_ID, "I AM ALIVE 🩷")
         except Exception:
             raise SystemExit(f"Assistant {num} failed to send message in log group.")
 
@@ -54,7 +54,7 @@ class Userbot(Client):
         client.mention = ub.me.mention
         self.clients.append(client)
         try:
-            await ub.join_chat("teamauro")
+            await ub.join_chat("bakafamly")
         except Exception:
             pass
         logger.info(f"Assistant {num} started as @{client.username}")

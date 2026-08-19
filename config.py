@@ -28,7 +28,7 @@ class Config:
         self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/bakafamly")
 
         self.API_URL = "https://pvtz.nexgenbots.xyz"
-        self.API_KEY = "30DxNexGenBots2f7ada"
+        self.API_KEY = "sparrow1Ij3SMdaURemV6Ud1yh4kAE8"
 
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", "False").lower() == "False"
         self.AUTO_END: bool = getenv("AUTO_END", "False").lower() == "False"
